@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-dark: 33, 33, 33; /* Define the dark background color */
+    --background-light: 251, 251, 253; /* Define the light background color */
+    --text-dark: 36, 37, 37; /* Define the dark text color */
+    --text-light: 248, 240, 240; /* Define the light text color */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: var(--background-dark);
+        --text-color: var(--text-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: var(--background-light);
+        --text-color: var(--text-light);
+    }
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.main-navbar {
+    display: flex;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.side-navbar {
+    height: 100vh;
+    position: relative;
+}
+
+.horizontal-navbar {
+    margin-left: 10rem;
+    width: 100vw;
+}
+
+/* body child pass */
+.body-child-pass {
+    margin-left: 10rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+/* Responsive Typography */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+a {
+    /* Styles for link tags */
+}
+
+
+/* Button Styles */
+.button-dark {
+    background-color: var(--text-dark);
+    color: var(--background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-light {
+    background-color: var(--text-light);
+    color: var(--background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-dark:hover,
+.button-light:hover {
+    background-color: gray; /* Adjust hover color */
+}
+
+
+/* sm: */
+@media (max-width: 640px) {
+    .side-navbar {
+        display: none;
+    }
+
+    .horizontal-navbar {
+        margin-left: 0;
+    }
+
+    /* body child pass */
+    .body-child-pass {
+        margin-left: 0;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+/* md: */
+@media (max-width: 768px) {
+    .side-navbar {
+        display: none;
+    }
+
+    .horizontal-navbar {
+        margin-left: 0;
+    }
+
+    /* body child pass */
+    .body-child-pass {
+        margin-left: 0;
+        padding: 2rem;
+        margin-top: 1rem;
+    }}
+
+/* lg: */
+@media (min-width: 1024px) {
+    /* Add specific styles for large screens here */
+}
+
+/* xl: */
+@media (min-width: 1280px) {
+    /* Add specific styles for extra-large screens here */
+}
+
+/* 2xl: */
+@media (min-width: 1536px) {
+    /* Add specific styles for 2xl screens here */
+}

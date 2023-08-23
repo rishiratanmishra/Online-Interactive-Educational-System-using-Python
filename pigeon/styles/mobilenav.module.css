@@ -1,0 +1,15 @@
+.background_color {
+  background: linear-gradient(-45deg, #5b00a7, #6a00c1, #5b00a7, #6a00c1);
+  color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .background_color a:hover{
+    color: #f6c416; /* Yellow color for hover */
+  }
+  
+
+.background_color a {
+  transition: color 0.3s ease;
+}

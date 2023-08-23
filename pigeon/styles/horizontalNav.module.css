@@ -1,0 +1,81 @@
+/* Update the background gradient and text color */
+.horizontal_main {
+  background: linear-gradient(-45deg, #5b00a7, #6a00c1, #5b00a7, #6a00c1);
+  color: white;
+  height: 80px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Center the title and add text-transform */
+.horizontal_user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+/* Adjust the profile icons alignment and spacing */
+.user_profile {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  gap: 1.5rem; /* Increase the gap for more breathing space */
+}
+
+/* Update the icon size and color */
+.user_profile svg {
+  font-size: 1.5rem; /* Increase the icon size */
+  color: white;
+  transition: color 0.3s ease; /* Add transition for hover effect */
+}
+
+/* Yellow hover effect */
+.user_profile svg:hover {
+  color: #f6c416; /* Yellow color for hover */
+}
+
+/* Update the hamburger menu styles */
+.hamburger {
+  font-size: 1.5rem; /* Increase the icon size */
+  display: none;
+  cursor: pointer;
+}
+
+/* Update the hamburger close button styles */
+.hamburger_close {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* Update the responsive styles for medium devices */
+@media (max-width: 768px) {
+  .horizontal_user {
+    gap: 0.5rem;
+  }
+
+  .user_profile {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  
+  /* Show the hamburger close button for medium devices */
+  .hamburger_close {
+    display: none;
+  }
+}
+
+/* Update the responsive styles for small devices */
+@media (max-width: 640px) {
+  /* Show the hamburger close button for small devices */
+  .hamburger_close {
+    display: none;
+  }
+}
